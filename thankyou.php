@@ -1,24 +1,6 @@
-﻿<!DOCTYPE html>
-<html lang="sk">
-    <!--NÁZOV, LINKY A META VŠADE ROVNAKÉ-->
-    <head>
-        <meta charset="UTF-8" />
-        <title>TJ Slovan Zbehy</title>
-        <link rel="stylesheet" href="css/style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Stránka o futbalovom tíme zo Zbehov">
-        <meta name="keywords" content="Zbehy, futbal, dedina, tim, TJ, Slovan">
-        <meta name="author" content="Krištof Kováčik">
+﻿<?php require_once __DIR__ . '/templates/header.php'; ?>
 
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-            crossorigin="anonymous"
-        />
-    </head>
-
-    <!--TELO THANK YOU-->
+<!--TELO THANK YOU-->
     <body>
         <!--NADPIS, OBRÁZOK A PREKLIK-->
         <div class="thankyou_telo">
