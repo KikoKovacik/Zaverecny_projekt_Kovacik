@@ -91,12 +91,20 @@ header{
 .index_telo{
     background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
                 url(../img/Zbehy_ihrisko.jpg);
-    background-position: center;
+    background-position: center center;
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
+    padding-top: 50px;
+    box-sizing: border-box;
+    margin-top: 0;
+    margin-bottom: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.index_telo + footer{
+    margin-top: -24px;
 }
 
 .index_obsah{
@@ -109,7 +117,7 @@ header{
     font-weight: bold;
     font-size: 3vw;
     text-transform: uppercase;
-    margin-top: 300px;
+    margin: 0 0 30px;
     text-align: center;
 }
 
@@ -117,6 +125,11 @@ header{
     color: white;
     font-size: 1.25vw;
     text-align: center;
+    margin: 0 0 20px;
+}
+
+.index_obsah p:last-child{
+    margin-bottom: 0;
 }
 
 /*DIZAJN LÍSTKOV*/

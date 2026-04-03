@@ -4,7 +4,6 @@
     <head>
         <meta charset="UTF-8" />
         <title>TJ Slovan Zbehy</title>
-        <link rel="stylesheet" href="css/style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Stránka o futbalovom tíme zo Zbehov">
         <meta name="keywords" content="Zbehy, futbal, dedina, tim, TJ, Slovan">
@@ -16,6 +15,7 @@
             integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
             crossorigin="anonymous"
         />
+        <link rel="stylesheet" href="css/style.css">
     </head>
 
     <body>
