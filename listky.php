@@ -1,14 +1,14 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="sk">
-    <!--NÁZOV, LINKY A META VŠADE ROVNAKÉ-->
+    <!--NĂZOV, LINKY A META VĹ ADE ROVNAKĂ‰-->
     <head>
         <meta charset="UTF-8" />
         <title>TJ Slovan Zbehy</title>
         <link rel="stylesheet" href="css/style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Stránka o futbalovom tíme zo Zbehov">
+        <meta name="description" content="StrĂˇnka o futbalovom tĂ­me zo Zbehov">
         <meta name="keywords" content="Zbehy, futbal, dedina, tim, TJ, Slovan">
-        <meta name="author" content="Krištof Kováčik">
+        <meta name="author" content="KriĹˇtof KovĂˇÄŤik">
 
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
@@ -19,87 +19,87 @@
     </head>
 
     <body>
-        <!--NAVIGÁCIA VŠADE ROVNAKÁ-->
+        <!--NAVIGĂCIA VĹ ADE ROVNAKĂ-->
         <header class="navigacia">
             <div class="navigacia_vsetko">
                 <div class="navigacia_vlavo">
                     <img src="img/Zbehy_znak.png" alt="Znak TJ Slovan Zbehy">
-                    <a href="index.html">TJ Slovan Zbehy</a>
+                    <a href="index.php">TJ Slovan Zbehy</a>
                 </div>
 
                 <input type="checkbox" id="navigacia_tlacitko"/>
-                <label for="navigacia_tlacitko" class="hamburger">☰</label>
+                <label for="navigacia_tlacitko" class="hamburger">â°</label>
 
                 <nav class="tlacitka">
-                    <a href="index.html" class="navigacia_ahref">Domov</a>
-                    <a href="blog.html" class="navigacia_ahref">Blog</a>
-                    <a href="listky.html" class="navigacia_ahref">Lístky</a>
-                    <a href="galeria.html" class="navigacia_ahref">Galéria</a>
-                    <a href="kontakt.html" class="navigacia_ahref">Kontakt</a>
+                    <a href="index.php" class="navigacia_ahref">Domov</a>
+                    <a href="blog.php" class="navigacia_ahref">Blog</a>
+                    <a href="listky.php" class="navigacia_ahref">LĂ­stky</a>
+                    <a href="galeria.php" class="navigacia_ahref">GalĂ©ria</a>
+                    <a href="kontakt.php" class="navigacia_ahref">Kontakt</a>
                 </nav>
             </div>
         </header>
 
-        <!--TELO LÍSTKOV-->
+        <!--TELO LĂŤSTKOV-->
         <div class="listky_telo">
             <div class="nadpis">
-                <h1>Lístky</h1>
+                <h1>LĂ­stky</h1>
             </div>
             <!--ZOZNAM-->
             <div class="listky_zoznam">
-                <h2>Náš klub aktuálne zastrešuje kategórie:</h2>
+                <h2>NĂˇĹˇ klub aktuĂˇlne zastreĹˇuje kategĂłrie:</h2>
                 <ul class="zoznam">
-                    <li>Dospelí („A-mužstvo“)</li>
-                    <li>Starší dorast („U-19“)</li>
-                    <li>Starší žiaci („U-15“)</li>
-                    <li>Mladší žiaci („U-13“)</li>
-                    <li>Prípravka („U-11“)</li>
+                    <li>DospelĂ­ (â€žA-muĹľstvoâ€ś)</li>
+                    <li>StarĹˇĂ­ dorast (â€žU-19â€ś)</li>
+                    <li>StarĹˇĂ­ Ĺľiaci (â€žU-15â€ś)</li>
+                    <li>MladĹˇĂ­ Ĺľiaci (â€žU-13â€ś)</li>
+                    <li>PrĂ­pravka (â€žU-11â€ś)</li>
                 </ul>
             </div>
-            <!--TABUĽKA-->
+            <!--TABUÄ˝KA-->
             <div class="listky_tabulka">
-                <h2>Vstupné</h2>
+                <h2>VstupnĂ©</h2>
                 <table class="tabulka">
                     <tr>
-                        <th>Kategória</th>
-                        <th>Divák</th>
+                        <th>KategĂłria</th>
+                        <th>DivĂˇk</th>
                         <th>Cena</th>
                     </tr>
                     <tr>
-                        <td rowspan="3">dospelí</td>
-                        <td>muži</td>
-                        <td>2€</td>
+                        <td rowspan="3">dospelĂ­</td>
+                        <td>muĹľi</td>
+                        <td>2â‚¬</td>
                     </tr>
                     <tr>
                         <td>seniori</td>
-                        <td>1€</td>
+                        <td>1â‚¬</td>
                     </tr>
                     <tr>
-                        <td>ženy a deti</td>
+                        <td>Ĺľeny a deti</td>
                         <td>zadarmo</td>
                     </tr>
                     <tr>
-                        <td>mládež</td>
-                        <td>všetci</td>
+                        <td>mlĂˇdeĹľ</td>
+                        <td>vĹˇetci</td>
                         <td>zadarmo</td>
                     </tr>
                 </table>
             </div>
-            <!--SPODNÝ TEXT-->
+            <!--SPODNĂť TEXT-->
             <div class="listky_text">
-                <h3>Lístky nepredávame vopred online, ale iba na mieste.</h3>
-                <p>Nebojte sa využiť zadarmo parkovanie pri ihrisku.</p>
-                <p>Rovnako sa nebojte navštíviť našu krčmu, kde čapujeme dobré alko aj nealko.</p>
+                <h3>LĂ­stky nepredĂˇvame vopred online, ale iba na mieste.</h3>
+                <p>Nebojte sa vyuĹľiĹĄ zadarmo parkovanie pri ihrisku.</p>
+                <p>Rovnako sa nebojte navĹˇtĂ­viĹĄ naĹˇu krÄŤmu, kde ÄŤapujeme dobrĂ© alko aj nealko.</p>
             </div>
         </div>
 
-        <!--FOOTER VŠADE ROVNAKÝ-->
+        <!--FOOTER VĹ ADE ROVNAKĂť-->
         <footer>
             <div class="footer_vsetko">
                 <div class="footer_hore">
-                    <p>Hlavný sponzor</p>
+                    <p>HlavnĂ˝ sponzor</p>
                     <div class="footer_preklik">
-                        <a href="https://www.stravovanieulisku.sk/">Stravovanie u Líšku</a>
+                        <a href="https://www.stravovanieulisku.sk/">Stravovanie u LĂ­Ĺˇku</a>
                     </div>
                 </div>
                 <div class="footer_stred">
@@ -108,17 +108,17 @@
                         <p>TJ Slovan Zbehy</p>
                     </div>
                     <div class="footer_vpravo">
-                        <a href="index.html" class="footer_ahref">Domov</a>
-                        <a href="blog.html" class="footer_ahref">Blog</a>
-                        <a href="listky.html" class="footer_ahref">Lístky</a>
-                        <a href="galeria.html" class="footer_ahref">Galéria</a>
-                        <a href="kontakt.html" class="footer_ahref">Kontakt</a>
+                        <a href="index.php" class="footer_ahref">Domov</a>
+                        <a href="blog.php" class="footer_ahref">Blog</a>
+                        <a href="listky.php" class="footer_ahref">LĂ­stky</a>
+                        <a href="galeria.php" class="footer_ahref">GalĂ©ria</a>
+                        <a href="kontakt.php" class="footer_ahref">Kontakt</a>
                     </div>
                 </div>
                 <div class="footer_dole">
-                    <p>© oficiálna stránka futbalového klubu TJ Slovan Zbehy</p>
-                    <p>Všetky práva vyhradené.</p>
-                    <p>2012 – 2025</p>
+                    <p>Â© oficiĂˇlna strĂˇnka futbalovĂ©ho klubu TJ Slovan Zbehy</p>
+                    <p>VĹˇetky prĂˇva vyhradenĂ©.</p>
+                    <p>2012 â€“ 2025</p>
                     <div class="footer_cislo_mail">
                         <a href="">0912 345 678</a>
                         <a href="">tjzbehy@sfz.com</a>
@@ -127,10 +127,10 @@
             </div>
         </footer>
             
-        <!--COOKIES A SCRIPTY VŠADE ROVNAKÉ-->
-        <!--KREATÍVNY BOD-->
+        <!--COOKIES A SCRIPTY VĹ ADE ROVNAKĂ‰-->
+        <!--KREATĂŤVNY BOD-->
         <div id="cookieConsent">
-            Táto stránka používa cookies.
+            TĂˇto strĂˇnka pouĹľĂ­va cookies.
             <button id="acceptCookies">Rozumiem</button>
         </div>
 

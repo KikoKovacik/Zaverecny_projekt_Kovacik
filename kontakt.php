@@ -1,14 +1,14 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="sk">
-    <!--NÁZOV, LINKY A META VŠADE ROVNAKÉ-->
+    <!--NĂZOV, LINKY A META VĹ ADE ROVNAKĂ‰-->
     <head>
         <meta charset="UTF-8" />
         <title>TJ Slovan Zbehy</title>
         <link rel="stylesheet" href="css/style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Stránka o futbalovom tíme zo Zbehov">
+        <meta name="description" content="StrĂˇnka o futbalovom tĂ­me zo Zbehov">
         <meta name="keywords" content="Zbehy, futbal, dedina, tim, TJ, Slovan">
-        <meta name="author" content="Krištof Kováčik">
+        <meta name="author" content="KriĹˇtof KovĂˇÄŤik">
 
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
@@ -19,23 +19,23 @@
     </head>
 
     <body>
-        <!--NAVIGÁCIA VŠADE ROVNAKÁ-->
+        <!--NAVIGĂCIA VĹ ADE ROVNAKĂ-->
         <header class="navigacia">
             <div class="navigacia_vsetko">
                 <div class="navigacia_vlavo">
                     <img src="img/Zbehy_znak.png" alt="Znak TJ Slovan Zbehy">
-                    <a href="index.html">TJ Slovan Zbehy</a>
+                    <a href="index.php">TJ Slovan Zbehy</a>
                 </div>
 
                 <input type="checkbox" id="navigacia_tlacitko"/>
-                <label for="navigacia_tlacitko" class="hamburger">☰</label>
+                <label for="navigacia_tlacitko" class="hamburger">â°</label>
 
                 <nav class="tlacitka">
-                    <a href="index.html" class="navigacia_ahref">Domov</a>
-                    <a href="blog.html" class="navigacia_ahref">Blog</a>
-                    <a href="listky.html" class="navigacia_ahref">Lístky</a>
-                    <a href="galeria.html" class="navigacia_ahref">Galéria</a>
-                    <a href="kontakt.html" class="navigacia_ahref">Kontakt</a>
+                    <a href="index.php" class="navigacia_ahref">Domov</a>
+                    <a href="blog.php" class="navigacia_ahref">Blog</a>
+                    <a href="listky.php" class="navigacia_ahref">LĂ­stky</a>
+                    <a href="galeria.php" class="navigacia_ahref">GalĂ©ria</a>
+                    <a href="kontakt.php" class="navigacia_ahref">Kontakt</a>
                 </nav>
             </div>
         </header>
@@ -45,7 +45,7 @@
             <div class="nadpis">
                 <h1>Kontakt</h1>
             </div>
-            <!--LABELY, INPUTY A TLAČIDLO VO FORMULÁRI-->
+            <!--LABELY, INPUTY A TLAÄŚIDLO VO FORMULĂRI-->
             <div class="kontakt_formular">
                 <form class="formular" id="kontaktForm">
                     <label for="meno">Meno</label>
@@ -54,26 +54,26 @@
                     <label for="email">Email</label>
                     <input type="email" id="email" required>
                     
-                    <label for="sprava">Správa</label>
-                    <textarea id="sprava" rows="5" placeholder="Svoju správu môžete zanechať ťu" required></textarea>
+                    <label for="sprava">SprĂˇva</label>
+                    <textarea id="sprava" rows="5" placeholder="Svoju sprĂˇvu mĂ´Ĺľete zanechaĹĄ ĹĄu" required></textarea>
 
                     <div class="suhlas">
                         <input type="checkbox" id="suhlas" required>
-                        <label for="suhlas">Súhlasím so spracovaním osobných údajov</label>
+                        <label for="suhlas">SĂşhlasĂ­m so spracovanĂ­m osobnĂ˝ch Ăşdajov</label>
                     </div>
 
-                    <button type="submit" class="tlacitko">Odoslať</button>
+                    <button type="submit" class="tlacitko">OdoslaĹĄ</button>
                 </form>
             </div>
         </div>
 
-        <!--FOOTER VŠADE ROVNAKÝ-->
+        <!--FOOTER VĹ ADE ROVNAKĂť-->
         <footer>
             <div class="footer_vsetko">
                 <div class="footer_hore">
-                    <p>Hlavný sponzor</p>
+                    <p>HlavnĂ˝ sponzor</p>
                     <div class="footer_preklik">
-                        <a href="https://www.stravovanieulisku.sk/">Stravovanie u Líšku</a>
+                        <a href="https://www.stravovanieulisku.sk/">Stravovanie u LĂ­Ĺˇku</a>
                     </div>
                 </div>
                 <div class="footer_stred">
@@ -82,17 +82,17 @@
                         <p>TJ Slovan Zbehy</p>
                     </div>
                     <div class="footer_vpravo">
-                        <a href="index.html" class="footer_ahref">Domov</a>
-                        <a href="blog.html" class="footer_ahref">Blog</a>
-                        <a href="listky.html" class="footer_ahref">Lístky</a>
-                        <a href="galeria.html" class="footer_ahref">Galéria</a>
-                        <a href="kontakt.html" class="footer_ahref">Kontakt</a>
+                        <a href="index.php" class="footer_ahref">Domov</a>
+                        <a href="blog.php" class="footer_ahref">Blog</a>
+                        <a href="listky.php" class="footer_ahref">LĂ­stky</a>
+                        <a href="galeria.php" class="footer_ahref">GalĂ©ria</a>
+                        <a href="kontakt.php" class="footer_ahref">Kontakt</a>
                     </div>
                 </div>
                 <div class="footer_dole">
-                    <p>© oficiálna stránka futbalového klubu TJ Slovan Zbehy</p>
-                    <p>Všetky práva vyhradené.</p>
-                    <p>2012 – 2025</p>
+                    <p>Â© oficiĂˇlna strĂˇnka futbalovĂ©ho klubu TJ Slovan Zbehy</p>
+                    <p>VĹˇetky prĂˇva vyhradenĂ©.</p>
+                    <p>2012 â€“ 2025</p>
                     <div class="footer_cislo_mail">
                         <a href="">0912 345 678</a>
                         <a href="">tjzbehy@sfz.com</a>
@@ -101,10 +101,10 @@
             </div>
         </footer>
             
-        <!--COOKIES A SCRIPTY VŠADE ROVNAKÉ-->
-        <!--KREATÍVNY BOD-->
+        <!--COOKIES A SCRIPTY VĹ ADE ROVNAKĂ‰-->
+        <!--KREATĂŤVNY BOD-->
         <div id="cookieConsent">
-            Táto stránka používa cookies.
+            TĂˇto strĂˇnka pouĹľĂ­va cookies.
             <button id="acceptCookies">Rozumiem</button>
         </div>
 

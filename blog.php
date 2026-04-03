@@ -1,14 +1,14 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="sk">
-    <!--NÁZOV, LINKY A META VŠADE ROVNAKÉ-->
+    <!--NĂZOV, LINKY A META VĹ ADE ROVNAKĂ‰-->
     <head>
         <meta charset="UTF-8" />
         <title>TJ Slovan Zbehy</title>
         <link rel="stylesheet" href="css/style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Stránka o futbalovom tíme zo Zbehov">
+        <meta name="description" content="StrĂˇnka o futbalovom tĂ­me zo Zbehov">
         <meta name="keywords" content="Zbehy, futbal, dedina, tim, TJ, Slovan">
-        <meta name="author" content="Krištof Kováčik">
+        <meta name="author" content="KriĹˇtof KovĂˇÄŤik">
         
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
@@ -19,47 +19,47 @@
     </head>
 
     <body>
-        <!--NAVIGÁCIA VŠADE ROVNAKÁ-->
+        <!--NAVIGĂCIA VĹ ADE ROVNAKĂ-->
         <header class="navigacia">
             <div class="navigacia_vsetko">
                 <div class="navigacia_vlavo">
                     <img src="img/Zbehy_znak.png" alt="Znak TJ Slovan Zbehy">
-                    <a href="index.html">TJ Slovan Zbehy</a>
+                    <a href="index.php">TJ Slovan Zbehy</a>
                 </div>
 
                 <input type="checkbox" id="navigacia_tlacitko"/>
-                <label for="navigacia_tlacitko" class="hamburger">☰</label>
+                <label for="navigacia_tlacitko" class="hamburger">â°</label>
 
                 <nav class="tlacitka">
-                    <a href="index.html" class="navigacia_ahref">Domov</a>
-                    <a href="blog.html" class="navigacia_ahref">Blog</a>
-                    <a href="listky.html" class="navigacia_ahref">Lístky</a>
-                    <a href="galeria.html" class="navigacia_ahref">Galéria</a>
-                    <a href="kontakt.html" class="navigacia_ahref">Kontakt</a>
+                    <a href="index.php" class="navigacia_ahref">Domov</a>
+                    <a href="blog.php" class="navigacia_ahref">Blog</a>
+                    <a href="listky.php" class="navigacia_ahref">LĂ­stky</a>
+                    <a href="galeria.php" class="navigacia_ahref">GalĂ©ria</a>
+                    <a href="kontakt.php" class="navigacia_ahref">Kontakt</a>
                 </nav>
             </div>
         </header>
 
         <!--TELO BLOGU-->
         <div class="blog_telo">
-            <!--NADPIS A ÚVODNÉ FOTKY-->
+            <!--NADPIS A ĂšVODNĂ‰ FOTKY-->
             <div class="nadpis">
                 <h1>Blog</h1>
             </div>
             <div class="blog_fotky">
                 <div class="blog_karta">
-                    <img src="img/Zbehy_tim.jpg" alt="Fotka tímu">
-                    <h4>Náš tím na Vianočnom turnaji</h4>
+                    <img src="img/Zbehy_tim.jpg" alt="Fotka tĂ­mu">
+                    <h4>NĂˇĹˇ tĂ­m na VianoÄŤnom turnaji</h4>
                 </div>
                 <div class="blog_karta">
-                    <img src="img/Zbehy_tabulka.png" alt="Tabuľka VI. ligy">
-                    <h4>Tabuľka VI. ligy Stred</h4>
+                    <img src="img/Zbehy_tabulka.png" alt="TabuÄľka VI. ligy">
+                    <h4>TabuÄľka VI. ligy Stred</h4>
                 </div>
             </div>
 
             <!--BOOTSTRAP KARUSEL-->
             <div class="blog_karusel">
-                <h2>Prehľad posledných 5 zápasov</h2>
+                <h2>PrehÄľad poslednĂ˝ch 5 zĂˇpasov</h2>
                 <div id="carouselExample" class="carousel slide">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -89,29 +89,29 @@
                 </div>
             </div>
 
-            <!--BOOTSTRAP AKORDEÓN-->
+            <!--BOOTSTRAP AKORDEĂ“N-->
             <div class="blog_akordeon">
-                <h2>Vyjadrenia po poslednom zápase</h2>
+                <h2>Vyjadrenia po poslednom zĂˇpase</h2>
                 <div class="accordion" id="accordionExample">
 
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
-                                Vyjadrenie trénera Romana Zentka
+                                Vyjadrenie trĂ©nera Romana Zentka
                             </button>
                         </h2>
                         <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <strong>Ako ste spokojný s dnešným zápasom?</strong><br>
-                                „Dnešné víťazstvo v poslednom majstrovskom stretnutí v roku 2025 proti
-                                mimoriadne kvalitnému súperovi bola odmena za našu zodpovednú prípravu.
-                                Som veľmi spokojný s opatrnou a spoľahlivou obranou, kreatívnym stredom
-                                ihriska aj s útočníkmi, ktorí sa neboja strieľať.“<br>
-                                <strong>Čo bude po konci jesennej časti nasledovať?</strong><br>
-                                „Prechádzame na tréningy v hale, kde sa budeme pripravovať na Vianočný turnaj. 
-                                Veľký futbal a hala sú dosť odlišné, napriek tomu verím, že predvedieme 
-                                kvalitnú hru aj tam. Chlapci majú motiváciu podávať ešte lepšie výkony, aby sa 
-                                prebojovali do menšej základnej zostavy.“
+                                <strong>Ako ste spokojnĂ˝ s dneĹˇnĂ˝m zĂˇpasom?</strong><br>
+                                â€žDneĹˇnĂ© vĂ­ĹĄazstvo v poslednom majstrovskom stretnutĂ­ v roku 2025 proti
+                                mimoriadne kvalitnĂ©mu sĂşperovi bola odmena za naĹˇu zodpovednĂş prĂ­pravu.
+                                Som veÄľmi spokojnĂ˝ s opatrnou a spoÄľahlivou obranou, kreatĂ­vnym stredom
+                                ihriska aj s ĂştoÄŤnĂ­kmi, ktorĂ­ sa neboja strieÄľaĹĄ.â€ś<br>
+                                <strong>ÄŚo bude po konci jesennej ÄŤasti nasledovaĹĄ?</strong><br>
+                                â€žPrechĂˇdzame na trĂ©ningy v hale, kde sa budeme pripravovaĹĄ na VianoÄŤnĂ˝ turnaj. 
+                                VeÄľkĂ˝ futbal a hala sĂş dosĹĄ odliĹˇnĂ©, napriek tomu verĂ­m, Ĺľe predvedieme 
+                                kvalitnĂş hru aj tam. Chlapci majĂş motivĂˇciu podĂˇvaĹĄ eĹˇte lepĹˇie vĂ˝kony, aby sa 
+                                prebojovali do menĹˇej zĂˇkladnej zostavy.â€ś
                             </div>
                         </div>
                     </div>
@@ -119,22 +119,22 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingTwo">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
-                                Vyjadrenie kapitána Šimona Šóša
+                                Vyjadrenie kapitĂˇna Ĺ imona Ĺ ĂłĹˇa
                             </button>
                         </h2>
                         <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <strong>Hodnotíš zápas pozitívne?</strong><br>
-                                „Veľmi pozitívne. Na celkom dobrom ihrisku pri chladnom počasí sme sa 
-                                snažili hrať našu kombinačnú hru. Ja v strede ihriska som sa snažil hru
-                                ukľudňovať, keďže hráme radšej futbal bez rýchlych brejkov. Dali sme dva
-                                góly, aj keď ich mohlo byť viac. Súpera sme držali od šancí a myslím, 
-                                že dnes sme zaslúžene vyhrali.“<br>
-                                <strong>Nájdu sa aj negatívne aspekty?</strong><br>
-                                „Musím pripomenúť, že sme celkom zbytočne dostali pár žltých kariet.
-                                Veľakrát si vysvetľujeme, aby sme v prerušeniach nestratili hlavu.
-                                Po poslednom zápase jesene sme si nechceli pripomínať len to zlé,
-                                ale padlo pár slov aj o tomto. Našu disciplínu však aj tak hodnotím dobre.“
+                                <strong>HodnotĂ­Ĺˇ zĂˇpas pozitĂ­vne?</strong><br>
+                                â€žVeÄľmi pozitĂ­vne. Na celkom dobrom ihrisku pri chladnom poÄŤasĂ­ sme sa 
+                                snaĹľili hraĹĄ naĹˇu kombinaÄŤnĂş hru. Ja v strede ihriska som sa snaĹľil hru
+                                ukÄľudĹovaĹĄ, keÄŹĹľe hrĂˇme radĹˇej futbal bez rĂ˝chlych brejkov. Dali sme dva
+                                gĂłly, aj keÄŹ ich mohlo byĹĄ viac. SĂşpera sme drĹľali od ĹˇancĂ­ a myslĂ­m, 
+                                Ĺľe dnes sme zaslĂşĹľene vyhrali.â€ś<br>
+                                <strong>NĂˇjdu sa aj negatĂ­vne aspekty?</strong><br>
+                                â€žMusĂ­m pripomenĂşĹĄ, Ĺľe sme celkom zbytoÄŤne dostali pĂˇr ĹľltĂ˝ch kariet.
+                                VeÄľakrĂˇt si vysvetÄľujeme, aby sme v preruĹˇeniach nestratili hlavu.
+                                Po poslednom zĂˇpase jesene sme si nechceli pripomĂ­naĹĄ len to zlĂ©,
+                                ale padlo pĂˇr slov aj o tomto. NaĹˇu disciplĂ­nu vĹˇak aj tak hodnotĂ­m dobre.â€ś
                             </div>
                         </div>
                     </div>
@@ -142,18 +142,18 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingThree">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
-                                Vyjadrenie strelca gólu Matúša Záhona
+                                Vyjadrenie strelca gĂłlu MatĂşĹˇa ZĂˇhona
                             </button>
                         </h2>
                         <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <strong>Si spokojný s dvomi gólmi za dva zápasy?</strong><br>
-                                „Góly sú pre mňa iba čerešnička, hlavne som rád za šesť bodov z týchto zápasov.
-                                Zároveň chcem vyzdvihnúť našich záložníkov, ktorí mi naservírovali skvelé prihrávky.“<br>
-                                <strong>Oslávili ste štvrté miesto v 14-tímovej konkurencii?</strong><br>
-                                „Samozrejme! Keďže tréner dával pozor, všetci sme, bohužiaľ, odišli domov
-                                po svojich. Je dobré chvíľu osláviť a oddýchnuť si, ale už opäť začíname trénovať
-                                v telocvični. Na prvom tréningu sme síce boli piati, ale účasť sa zvyšuje.“
+                                <strong>Si spokojnĂ˝ s dvomi gĂłlmi za dva zĂˇpasy?</strong><br>
+                                â€žGĂłly sĂş pre mĹa iba ÄŤereĹˇniÄŤka, hlavne som rĂˇd za ĹˇesĹĄ bodov z tĂ˝chto zĂˇpasov.
+                                ZĂˇroveĹ chcem vyzdvihnĂşĹĄ naĹˇich zĂˇloĹľnĂ­kov, ktorĂ­ mi naservĂ­rovali skvelĂ© prihrĂˇvky.â€ś<br>
+                                <strong>OslĂˇvili ste ĹˇtvrtĂ© miesto v 14-tĂ­movej konkurencii?</strong><br>
+                                â€žSamozrejme! KeÄŹĹľe trĂ©ner dĂˇval pozor, vĹˇetci sme, bohuĹľiaÄľ, odiĹˇli domov
+                                po svojich. Je dobrĂ© chvĂ­Äľu oslĂˇviĹĄ a oddĂ˝chnuĹĄ si, ale uĹľ opĂ¤ĹĄ zaÄŤĂ­name trĂ©novaĹĄ
+                                v telocviÄŤni. Na prvom trĂ©ningu sme sĂ­ce boli piati, ale ĂşÄŤasĹĄ sa zvyĹˇuje.â€ś
                             </div>
                         </div>
                     </div>
@@ -161,13 +161,13 @@
             </div>
         </div>
 
-        <!--FOOTER VŠADE ROVNAKÝ-->
+        <!--FOOTER VĹ ADE ROVNAKĂť-->
         <footer>
             <div class="footer_vsetko">
                 <div class="footer_hore">
-                    <p>Hlavný sponzor</p>
+                    <p>HlavnĂ˝ sponzor</p>
                     <div class="footer_preklik">
-                        <a href="https://www.stravovanieulisku.sk/">Stravovanie u Líšku</a>
+                        <a href="https://www.stravovanieulisku.sk/">Stravovanie u LĂ­Ĺˇku</a>
                     </div>
                 </div>
                 <div class="footer_stred">
@@ -176,17 +176,17 @@
                         <p>TJ Slovan Zbehy</p>
                     </div>
                     <div class="footer_vpravo">
-                        <a href="index.html" class="footer_ahref">Domov</a>
-                        <a href="blog.html" class="footer_ahref">Blog</a>
-                        <a href="listky.html" class="footer_ahref">Lístky</a>
-                        <a href="galeria.html" class="footer_ahref">Galéria</a>
-                        <a href="kontakt.html" class="footer_ahref">Kontakt</a>
+                        <a href="index.php" class="footer_ahref">Domov</a>
+                        <a href="blog.php" class="footer_ahref">Blog</a>
+                        <a href="listky.php" class="footer_ahref">LĂ­stky</a>
+                        <a href="galeria.php" class="footer_ahref">GalĂ©ria</a>
+                        <a href="kontakt.php" class="footer_ahref">Kontakt</a>
                     </div>
                 </div>
                 <div class="footer_dole">
-                    <p>© oficiálna stránka futbalového klubu TJ Slovan Zbehy</p>
-                    <p>Všetky práva vyhradené.</p>
-                    <p>2012 – 2025</p>
+                    <p>Â© oficiĂˇlna strĂˇnka futbalovĂ©ho klubu TJ Slovan Zbehy</p>
+                    <p>VĹˇetky prĂˇva vyhradenĂ©.</p>
+                    <p>2012 â€“ 2025</p>
                     <div class="footer_cislo_mail">
                         <a href="">0912 345 678</a>
                         <a href="">tjzbehy@sfz.com</a>
@@ -195,10 +195,10 @@
             </div>
         </footer>
             
-        <!--COOKIES A SCRIPTY VŠADE ROVNAKÉ-->
-        <!--KREATÍVNY BOD-->
+        <!--COOKIES A SCRIPTY VĹ ADE ROVNAKĂ‰-->
+        <!--KREATĂŤVNY BOD-->
         <div id="cookieConsent">
-            Táto stránka používa cookies.
+            TĂˇto strĂˇnka pouĹľĂ­va cookies.
             <button id="acceptCookies">Rozumiem</button>
         </div>
 
