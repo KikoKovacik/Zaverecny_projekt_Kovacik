@@ -2,7 +2,9 @@
 
 declare(strict_types=1);
 
-// Centralized app configuration for local JSON storage.
-define('DATABASE', [
-    'JSON_FILE' => __DIR__ . '/../data/messages.json',
-]);
+// Databázové nastavenia
+define('DB_HOST', 'localhost');
+define('DB_USER', 'root');
+define('DB_PASS', '');
+define('DB_NAME', 'zaverecny_projekt');
+define('DB_CHARSET', 'utf8mb4');

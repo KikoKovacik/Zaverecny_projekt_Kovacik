@@ -3,7 +3,7 @@ $chybaOdoslania = '';
 $errorCode = $_GET['error'] ?? '';
 
 if ($errorCode === '1') {
-    $chybaOdoslania = 'Prosim, vyplnte vsetky polia a potvrďte suhlas.';
+    $chybaOdoslania = 'Prosim, vyplnte vsetky polia a potvrdte suhlas.';
 } elseif ($errorCode === '2') {
     $chybaOdoslania = 'Prosim, zadajte platnu emailovu adresu.';
 } elseif ($errorCode === '3') {

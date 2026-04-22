@@ -99,7 +99,6 @@ header{
     margin-top: 0;
     margin-bottom: 0;
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
@@ -109,7 +108,7 @@ header{
 
 .index_obsah{
     width: 95%;
-    align-items: center;
+    margin-top: 270px;
 }
 
 .index_obsah h1{
