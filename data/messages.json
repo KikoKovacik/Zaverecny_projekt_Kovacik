@@ -1,1 +1,16 @@
-[]
+[
+    {
+        "id": 1,
+        "meno": "Krištof Kováčik",
+        "email": "kiko.kovacik1502@gmail.com",
+        "sprava": "dobrý deň, skúšam funkčnosť odosielania formulára",
+        "created_at": "2026-04-22T15:03:22+02:00"
+    },
+    {
+        "id": 2,
+        "meno": "Kiko",
+        "email": "kristof.kovacik@student.ukf.sk",
+        "sprava": "JSON súbor funguje",
+        "created_at": "2026-04-22T15:04:59+02:00"
+    }
+]
