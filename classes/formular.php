@@ -22,7 +22,7 @@ class Kontakt
     public function ulozitSpravu(string $meno, string $email, string $sprava): bool
     {
         try {
-            $sql = 'INSERT INTO spravy (meno, email, sprava, created_at) VALUES (:meno, :email, :sprava, NOW())';
+            $sql = 'INSERT INTO spravy (meno, email, sprava, cas) VALUES (:meno, :email, :sprava, NOW())';
             $stmt = $this->pdo->prepare($sql);
 
             return $stmt->execute([
