@@ -12,3 +12,6 @@
 .DS_Store
 Thumbs.db
 .vscode/
+
+# Composer output
+/vendor/

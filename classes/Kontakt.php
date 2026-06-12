@@ -2,13 +2,7 @@
 
 declare(strict_types=1);
 
-namespace formular;
-
-require_once __DIR__ . '/../classes/Database.php';
-require_once __DIR__ . '/../classes/SpravaManager.php';
-
-use App\Database;
-use App\SpravaManager;
+namespace App;
 
 class Kontakt
 {

@@ -37,7 +37,7 @@ class SpravaManager
 
     public function getMessageById(int $id): ?array
     {
-        $stmt = $this->database->pdo()->prepare('SELECT id, meno, email, sprava, cas, poznamka FROM spravy WHERE id = :id LIMIT 1');
+        $stmt = $this->database->pdo()->prepare('SELECT id, meno, email, sprava, cas, poznamka FROM spravy WHERE id = :id');
         $stmt->execute([':id' => $id]);
         $message = $stmt->fetch(PDO::FETCH_ASSOC);
 

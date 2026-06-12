@@ -6,9 +6,7 @@ use App\Auth;
 use App\Database;
 use App\SpravaManager;
 
-require_once __DIR__ . '/../classes/Database.php';
-require_once __DIR__ . '/../classes/Auth.php';
-require_once __DIR__ . '/../classes/SpravaManager.php';
+require_once __DIR__ . '/../vendor/autoload.php';
 
 $auth = new Auth(new Database());
 $auth->requireAdmin();
