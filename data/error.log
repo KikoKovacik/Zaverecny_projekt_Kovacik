@@ -1,0 +1,4 @@
+<!-- Error log for form processing (text file) -->
+[2026-06-09 22:09:48] Chyba pri ukladaní správy: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'zaverecny_projekt.spravy' doesn't exist in C:\xampp\htdocs\Zaverecny_projekt_Kovacik\classes\formular.php on line 34
+[2026-06-12 20:04:00] Class "formular\Kontakt" not found in C:\xampp\htdocs\Zaverecny_projekt_Kovacik\db\spracovanieFormulara.php on line 30
+[2026-06-12 20:04:24] Class "formular\Kontakt" not found in C:\xampp\htdocs\Zaverecny_projekt_Kovacik\db\spracovanieFormulara.php on line 30

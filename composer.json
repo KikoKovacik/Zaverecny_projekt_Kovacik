@@ -1,0 +1,11 @@
+{
+    "name": "zaverecny-projekt-kovacik/site",
+    "description": "Web pre záverečný projekt s Composer autoloadom.",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "classes/"
+        }
+    },
+    "require": {}
+}

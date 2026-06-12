@@ -1,0 +1,647 @@
+/*ZÁKLAD PRE BODY*/
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/*DIZAJN NAVIGÁCIE*/
+header{
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 136, 204);
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    z-index: 9999;
+}
+
+.navigacia_vsetko{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.navigacia_vlavo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navigacia_vlavo a{
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.navigacia_vlavo a:hover{
+    color: white;
+}
+
+.navigacia_vlavo img{
+    height: 40px;
+    width: auto;
+}
+
+#navigacia_tlacitko{
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.hamburger{
+    display: none;
+}
+
+.tlacitka a{
+    text-decoration: none;
+}
+
+.navigacia_ahref{
+    text-decoration: none;
+    color: lightgrey;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.navigacia_ahref:hover{
+    color: white;
+}
+
+/*DIZAJN NADPISOV STRÁNOK*/
+.nadpis{
+    background-color: rgb(0, 136, 204);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.nadpis h1{
+    color: rgb(255, 240, 60);
+    text-transform: uppercase;
+}
+
+/*DIZAJN INDEXU*/
+.index_telo{
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+                url(../img/Zbehy_ihrisko.jpg);
+    background-position: center center;
+    background-size: cover;
+    min-height: 100vh;
+    padding-top: 50px;
+    box-sizing: border-box;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.index_telo + footer{
+    margin-top: -24px;
+}
+
+.index_obsah{
+    width: 95%;
+    margin-top: 270px;
+}
+
+.index_obsah h1{
+    color: white;
+    font-weight: bold;
+    font-size: 3vw;
+    text-transform: uppercase;
+    margin: 0 0 30px;
+    text-align: center;
+}
+
+.index_obsah p{
+    color: white;
+    font-size: 1.25vw;
+    text-align: center;
+    margin: 0 0 20px;
+}
+
+.index_obsah p:last-child{
+    margin-bottom: 0;
+}
+
+/*DIZAJN LÍSTKOV*/
+.listky_telo{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.listky_zoznam{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.zoznam li{
+    font-size: 1.25rem;
+}
+
+.zoznam li::marker {
+    content: "⚽";
+}
+
+.listky_tabulka{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.tabulka{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    border-radius: 10px;
+    overflow: hidden;
+    border: none;
+}
+
+.tabulka th, .tabulka td{
+    text-align: center;
+    padding: 12px;
+    word-wrap: break-word;
+}
+
+.tabulka th{
+    background-color: rgb(0, 136, 204);
+    color: white;
+    font-weight: bold;
+}
+
+.tabulka td{
+    background-color: rgba(255, 240, 60, 0.5);
+}
+
+.listky_text{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    border-radius: 20px;
+    width: 100%;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.listky_zoznam h2, .listky_tabulka h2, .listky_text h3{
+    font-weight: bold;
+}
+
+.listky_text h3, .listky_text p{
+    text-align: center;
+}
+
+/*DIZAJN BLOGU*/
+.blog_telo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.blog_fotky{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+}
+
+.blog_karta{
+    height: 100%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.blog_karta img{
+    width: 100%;
+}
+
+.blog_karta h4{
+    font-size: 2vw;
+}
+
+.blog_karusel, .blog_akordeon{
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+}
+
+.blog_karusel h2, .blog_akordeon h2{
+    font-weight: bold;
+    text-align: center;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 7.5% !important;
+    height: 22.5% !important;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: gray !important;
+}
+
+.accordion{
+    width: 95%;
+}
+
+/*DIZAJN GALÉRIE*/
+.galeria_telo{
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.galeria_rad{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+}
+
+.galeria_karta{
+    width: 33%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.galeria_karta img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.galeria_karta h4{
+    font-size: 2vw;
+}
+
+/*DIZAJN KONTAKTU*/
+.kontakt_telo{
+    width: 100%;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.kontakt_formular{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+}
+
+.formular{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    width: 30%;
+    min-width: 400px;
+}
+
+label{
+    font-weight: 100;
+}
+
+input, textarea{
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+button{
+    align-self: center;
+    width: 30%;
+    padding: 15px !important;
+    background-color: rgb(0, 136, 204);
+    color: white;
+    border: none;
+    border-radius: 20px !important;
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+button:hover{
+    background-color: rgb(0, 80, 120);
+}
+.suhlas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.suhlas input[type="checkbox"]{
+    margin-top: 2px;
+    width: auto;
+}
+
+/*DIZAJN THANKYOU*/
+.thankyou_telo{
+    margin-top: 125px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.thankyou_telo h1{
+    text-align: center;
+}
+
+.thankyou_telo img{
+    display: flex;
+    width: 200px;
+    height: auto;
+}
+
+.thankyou_ahref{
+    background-color: rgb(0, 136, 204);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.thankyou_ahref a{
+    color: white;
+    text-decoration: none;
+}
+
+.thankyou_ahref a:hover{
+    color: white;
+}
+
+/*DIZAJN FOOTERA*/
+footer{
+    background: linear-gradient(rgb(0, 136, 204), rgb(0, 136, 204), rgb(255, 240, 60));
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer_vsetko{
+    width: 100%;
+}
+
+footer p{
+    color: white;
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.footer_hore{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+
+.footer_preklik{
+    display: flex;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgb(255, 240, 60);
+}
+
+.footer_preklik:hover{
+    background-color: rgb(255, 240, 180);
+}
+
+.footer_preklik a{
+    color: rgb(0, 136, 204);
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.footer_preklik a:hover{
+    color: rgb(0, 136, 204);
+}
+
+.footer_stred{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.footer_vlavo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer_vlavo img{
+    height: 40px;
+    width: auto;
+}
+
+.footer_ahref{
+    text-decoration: none;
+    color: lightgrey;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.footer_ahref:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+.footer_dole{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer_cislo_mail{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.footer_cislo_mail a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.footer_cislo_mail a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+/*DIZAJN COOKIES LIŠTY*/
+/*KREATÍVNY BOD*/
+#cookieConsent{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.75);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    z-index: 9999;
+    display: none;
+}
+
+#cookieConsent button{
+    margin-left: 10px;
+    padding: 5px 10px;
+    width: 110px;
+    background: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/*DIZAJN ÚPRAV PRE MENŠIE ZOBRAZENIE*/
+@media (max-width: 768px){
+    /*ÚPRAVA PRE NAVIGÁCIU*/
+    header{
+        height: auto;
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+
+    .navigacia_vsetko{
+        flex-wrap: wrap;
+    }
+
+    .tlacitka{
+        overflow: hidden;
+        max-height: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(0, 136, 204);
+        transition: 1s;
+    }
+
+    .tlacitka a{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: white;
+    }
+
+    .hamburger{
+        display: flex;
+        font-size: 20px;
+        color: lightgrey;
+        border: 3px solid lightgrey;
+        border-radius: 5px;
+        padding: 5px 15px;
+        text-align: center;
+        margin: 0;
+    }
+
+    #navigacia_tlacitko:checked ~ .tlacitka{
+        max-height: 300px;
+    }
+
+    /*ÚPRAVA PRE FOOTER*/
+    .footer_vpravo{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*ÚPRAVA PRE BLOG*/
+    .blog_fotky{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blog_karta h4{
+        font-size: 3.75vw;
+    }
+
+    /*ÚPRAVA PRE GALÉRIU*/
+    .galeria_rad{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .galeria_karta{
+        width: 90%;
+    }
+    
+    .galeria_karta h4{
+        font-size: 4vw;
+    }
+}

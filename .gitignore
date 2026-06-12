@@ -1,0 +1,17 @@
+# Ignore presentation sources
+*.ppt
+*.pptx
+*.pps
+*.ppsx
+
+# Optional local docs folder for school materials
+/docs/
+/docs/**
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Composer output
+/vendor/
