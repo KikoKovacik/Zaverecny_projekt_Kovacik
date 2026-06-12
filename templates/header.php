@@ -1,4 +1,11 @@
-﻿<!DOCTYPE html>
+﻿<?php
+if (session_status() !== PHP_SESSION_ACTIVE) {
+    session_start();
+}
+
+$isAdmin = isset($_SESSION['user_id']);
+?>
+<!DOCTYPE html>
 <html lang="sk">
     <!--NÁZOV, LINKY A META VŠADE ROVNAKÉ-->
     <head>
@@ -36,6 +43,12 @@
                     <a href="listky.php" class="navigacia_ahref">Lístky</a>
                     <a href="galeria.php" class="navigacia_ahref">Galéria</a>
                     <a href="kontakt.php" class="navigacia_ahref">Kontakt</a>
+                    <?php if ($isAdmin): ?>
+                        <a href="admin_spravy.php" class="navigacia_ahref">Admin</a>
+                        <a href="db/logout.php" class="navigacia_ahref">Odhlásiť</a>
+                    <?php else: ?>
+                        <a href="login.php" class="navigacia_ahref">Prihlásenie</a>
+                    <?php endif; ?>
                 </nav>
             </div>
         </header>
