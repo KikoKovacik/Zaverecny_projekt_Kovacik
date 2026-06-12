@@ -37,7 +37,7 @@ require_once __DIR__ . '/templates/header.php';
 
 <div class="kontakt_telo">
     <div class="nadpis">
-        <h1>Admin správy</h1>
+        <h1>Správy administrátora</h1>
     </div>
 
     <?php if ($statusMessage !== ''): ?>

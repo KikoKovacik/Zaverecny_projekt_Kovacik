@@ -44,10 +44,10 @@ $isAdmin = isset($_SESSION['user_id']);
                     <a href="galeria.php" class="navigacia_ahref">Galéria</a>
                     <a href="kontakt.php" class="navigacia_ahref">Kontakt</a>
                     <?php if ($isAdmin): ?>
-                        <a href="admin_spravy.php" class="navigacia_ahref">Admin</a>
-                        <a href="db/logout.php" class="navigacia_ahref">Odhlásiť</a>
+                        <a href="admin_spravy.php" class="navigacia_ahref">Administrácia</a>
+                        <a href="db/logout.php" class="navigacia_ahref">Odhlásiť sa</a>
                     <?php else: ?>
-                        <a href="login.php" class="navigacia_ahref">Prihlásenie</a>
+                        <a href="login.php" class="navigacia_ahref">Prihlásenie administrátora</a>
                     <?php endif; ?>
                 </nav>
             </div>
