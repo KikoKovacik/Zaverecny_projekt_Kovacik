@@ -1,56 +1,39 @@
-﻿<?php require_once __DIR__ . '/templates/header.php'; ?>
+﻿<?php
+
+require_once __DIR__ . '/vendor/autoload.php';
+
+use App\Database;
+use App\GaleriaManager;
+
+$database = new Database();
+$galeriaManager = new GaleriaManager($database);
+$images = $galeriaManager->getImages();
+
+require_once __DIR__ . '/templates/header.php'; 
+?>
 
 <!--TELO GALÉRIE-->
-        <div class="galeria_telo">
-            <div class="nadpis">
-                <h1>Galéria</h1>
-            </div>
-            <!--PRVÝ RAD S KARTAMI-->
-            <div class="galeria_rad">
-                <div class="galeria_karta">
-                    <img src="img/Zbehy_vtacia_perspektiva1.jpg" alt="Zápas z vtáčej perspektívy 1">
-                    <h4>Prípravný zápas</h4>
+<div class="galeria_telo">
+    <div class="nadpis">
+        <h1>Galéria</h1>
+    </div>
+
+    <?php if (empty($images)): ?>
+        <p style="text-align: center; color: white;">V galérii momentálne nie sú žiadne obrázky.</p>
+    <?php else: ?>
+        <div class="galeria_rad" style="flex-wrap: wrap;">
+            <?php foreach ($images as $img): ?>
+                <div class="galeria_karta" style="margin-bottom: 20px;">
+                    <img src="<?php echo htmlspecialchars((string) $img['cesta_k_suboru'], ENT_QUOTES, 'UTF-8'); ?>" 
+                         alt="<?php echo htmlspecialchars((string) ($img['popis'] ?? 'Obrázok z galérie'), ENT_QUOTES, 'UTF-8'); ?>">
+                    <?php if (!empty($img['popis'])): ?>
+                        <h4><?php echo htmlspecialchars((string) $img['popis'], ENT_QUOTES, 'UTF-8'); ?></h4>
+                    <?php endif; ?>
                 </div>
-                <div class="galeria_karta">
-                    <img src="img/Zbehy_vtacia_perspektiva2.jpg" alt="Zápas z vtáčej perspektívy 2">
-                    <h4>Prípravný zápas</h4>
-                </div>
-                <div class="galeria_karta">
-                    <img src="img/Zbehy_vtacia_perspektiva3.jpg" alt="Zápas z vtáčej perspektívy 3">
-                    <h4>Prípravný zápas</h4>
-                </div>
-            </div>
-            <!--DRUHÝ RAD S KARTAMI-->
-            <div class="galeria_rad">
-                <div class="galeria_karta">
-                    <img src="img/Zbehy_zapas1.jpg" alt="Fotka z majstrovského zápasu">
-                    <h4>Majstrovský zápas</h4>
-                </div>
-                <div class="galeria_karta">
-                    <img src="img/Zbehy_zapas2.jpg" alt="Fotka z majstrovského zápasu">
-                    <h4>Majstrovský zápas</h4>
-                </div>
-                <div class="galeria_karta">
-                    <img src="img/Zbehy_zapas3.jpg" alt="Fotka z majstrovského zápasu">
-                    <h4>Majstrovský zápas</h4>
-                </div>
-            </div>
-            <!--TRETÍ RAD S KARTAMI-->
-            <div class="galeria_rad">
-                <div class="galeria_karta">
-                    <img src="img/Zbehy_najvernejsi1.jpg" alt="Fotka divákov">
-                    <h4>Naši najvernejší</h4>
-                </div>
-                <div class="galeria_karta">
-                    <img src="img/Zbehy_najvernejsi2.jpg" alt="Fotka divákov">
-                    <h4>Naši najvernejší</h4>
-                </div>
-                <div class="galeria_karta">
-                    <img src="img/Zbehy_najvernejsi3.jpg" alt="Fotka divákov">
-                    <h4>Naši najvernejší</h4>
-                </div>
-            </div>
+            <?php endforeach; ?>
         </div>
+    <?php endif; ?>
+</div>
 
 <?php require_once __DIR__ . '/templates/footer.php'; ?>
 
