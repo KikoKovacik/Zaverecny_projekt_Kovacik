@@ -4,13 +4,22 @@ if (session_status() !== PHP_SESSION_ACTIVE) {
 }
 
 $isAdmin = isset($_SESSION['user_id']);
+$currentPage = basename($_SERVER['SCRIPT_NAME']);
+
+$pages = [
+    'index.php' => 'Domov',
+    'blog.php' => 'Blog',
+    'listky.php' => 'Lístky',
+    'galeria.php' => 'Galéria',
+    'kontakt.php' => 'Kontakt'
+];
 ?>
 <!DOCTYPE html>
 <html lang="sk">
     <!--NÁZOV, LINKY A META VŠADE ROVNAKÉ-->
     <head>
         <meta charset="UTF-8" />
-        <title>TJ Slovan Zbehy</title>
+        <title>TJ Slovan Zbehy<?php echo isset($pages[$currentPage]) ? ' | ' . $pages[$currentPage] : ''; ?></title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Stránka o futbalovom tíme zo Zbehov">
         <meta name="keywords" content="Zbehy, futbal, dedina, tim, TJ, Slovan">
@@ -38,17 +47,15 @@ $isAdmin = isset($_SESSION['user_id']);
                 <label for="navigacia_tlacitko" class="hamburger">☰</label>
 
                 <nav class="tlacitka">
-                    <a href="index.php" class="navigacia_ahref">Domov</a>
-                    <a href="blog.php" class="navigacia_ahref">Blog</a>
-                    <a href="listky.php" class="navigacia_ahref">Lístky</a>
-                    <a href="galeria.php" class="navigacia_ahref">Galéria</a>
-                    <a href="kontakt.php" class="navigacia_ahref">Kontakt</a>
+                    <?php foreach ($pages as $url => $title): ?>
+                        <a href="<?php echo $url; ?>" class="navigacia_ahref <?php echo ($currentPage == $url) ? 'active' : ''; ?>"><?php echo $title; ?></a>
+                    <?php endforeach; ?>
                     <?php if ($isAdmin): ?>
-                        <a href="admin_spravy.php" class="navigacia_ahref">Administrácia správ</a>
-                        <a href="admin_galeria.php" class="navigacia_ahref">Administrácia galérie</a>
+                        <a href="admin_spravy.php" class="navigacia_ahref <?php echo ($currentPage == 'admin_spravy.php') ? 'active' : ''; ?>">Administrácia správ</a>
+                        <a href="admin_galeria.php" class="navigacia_ahref <?php echo ($currentPage == 'admin_galeria.php') ? 'active' : ''; ?>">Administrácia galérie</a>
                         <a href="db/logout.php" class="navigacia_ahref">Odhlásiť sa</a>
                     <?php else: ?>
-                        <a href="login.php" class="navigacia_ahref">Prihlásenie administrátora</a>
+                        <a href="login.php" class="navigacia_ahref <?php echo ($currentPage == 'login.php') ? 'active' : ''; ?>">Prihlásenie administrátora</a>
                     <?php endif; ?>
                 </nav>
             </div>
