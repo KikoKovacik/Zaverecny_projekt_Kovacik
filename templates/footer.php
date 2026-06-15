@@ -12,17 +12,15 @@
                 <p>TJ Slovan Zbehy</p>
             </div>
             <div class="footer_vpravo">
-                <a href="index.php" class="footer_ahref">Domov</a>
-                <a href="blog.php" class="footer_ahref">Blog</a>
-                <a href="listky.php" class="footer_ahref">Lístky</a>
-                <a href="galeria.php" class="footer_ahref">Galéria</a>
-                <a href="kontakt.php" class="footer_ahref">Kontakt</a>
+                <?php foreach ($pages as $url => $title): ?>
+                    <a href="<?php echo $url; ?>" class="footer_ahref <?php echo ($currentPage == $url) ? 'active' : ''; ?>"><?php echo $title; ?></a>
+                <?php endforeach; ?>
             </div>
         </div>
         <div class="footer_dole">
             <p>© oficiálna stránka futbalového klubu TJ Slovan Zbehy</p>
             <p>Všetky práva vyhradené.</p>
-            <p>2012 – 2025</p>
+            <p>2012 – <?php echo date('Y'); ?></p>
             <div class="footer_cislo_mail">
                 <a href="">0912 345 678</a>
                 <a href="">tjzbehy@sfz.com</a>
