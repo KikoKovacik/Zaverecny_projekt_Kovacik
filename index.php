@@ -4,7 +4,17 @@
         <div class="index_telo">
             <!--NADPIS A PARAGRAFY-->
             <div class="index_obsah">
-                <h1>Vitajte na oficiálnej stránke TJ Slovan Zbehy!</h1>
+                <?php
+                $hodina = date('G');
+                if ($hodina >= 4 && $hodina < 8) {
+                    $pozdrav = "Dobré ráno";
+                } elseif ($hodina >= 8 && $hodina < 20) {
+                    $pozdrav = "Dobrý deň";
+                } else {
+                    $pozdrav = "Dobrý večer";
+                }
+                ?>
+                <h1><?php echo $pozdrav; ?>, vitajte na stránke TJ Slovan Zbehy!</h1>
                 <p>TJ Slovan Zbehy je dlhoročným účastníkom VI. ligy Stred
                     Západoslovenského futbalového zväzu, pôsobiaci v dedine s 2200 obyvateľmi,
                      ktorá je vzdialená približne 10km od mesta Nitra.
