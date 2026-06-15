@@ -41,7 +41,7 @@ else{
         $logFile = __DIR__ . '/../data/error.log';
         $logMessage = sprintf("[%s] %s in %s on line %d\n", date('Y-m-d H:i:s'), $e->getMessage(), $e->getFile(), $e->getLine());
         @file_put_contents($logFile, $logMessage, FILE_APPEND | LOCK_EX);
-        header('Location: ../kontakt.php?error=3');
+        http_response_code(404);
         exit;
     }
 }

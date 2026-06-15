@@ -3,6 +3,9 @@ if (session_status() !== PHP_SESSION_ACTIVE) {
     session_start();
 }
 
+// Z cvicenia 5: Načítanie témy pomocou GET parametra
+$theme = $_GET["theme"] ?? "light";
+
 $isAdmin = isset($_SESSION['user_id']);
 $currentPage = basename($_SERVER['SCRIPT_NAME']);
 
@@ -31,12 +34,12 @@ $pages = [
             integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
             crossorigin="anonymous"
         />
-        <link rel="stylesheet" href="css/style.css?v=2">
+        <link rel="stylesheet" href="css/style.css?v=3">
     </head>
 
-    <body>
+    <body class="<?php echo $theme === 'dark' ? 'dark-mode' : ''; ?>">
         <!--NAVIGÁCIA VŠADE ROVNAKÁ-->
-        <header class="navigacia">
+        <header class="navigacia" style="<?php echo $theme === 'dark' ? 'background-color: darkblue;' : ''; ?>">
             <div class="navigacia_vsetko">
                 <div class="navigacia_vlavo">
                     <img src="img/Zbehy_znak.png" alt="Znak TJ Slovan Zbehy">
@@ -48,15 +51,16 @@ $pages = [
 
                 <nav class="tlacitka">
                     <?php foreach ($pages as $url => $title): ?>
-                        <a href="<?php echo $url; ?>" class="navigacia_ahref <?php echo ($currentPage == $url) ? 'active' : ''; ?>"><?php echo $title; ?></a>
+                        <a href="<?php echo $url; ?>?theme=<?php echo $theme; ?>" class="navigacia_ahref <?php echo ($currentPage == $url) ? 'active' : ''; ?>"><?php echo $title; ?></a>
                     <?php endforeach; ?>
                     <?php if ($isAdmin): ?>
-                        <a href="admin_spravy.php" class="navigacia_ahref <?php echo ($currentPage == 'admin_spravy.php') ? 'active' : ''; ?>">Administrácia správ</a>
-                        <a href="admin_galeria.php" class="navigacia_ahref <?php echo ($currentPage == 'admin_galeria.php') ? 'active' : ''; ?>">Administrácia galérie</a>
+                        <a href="admin_spravy.php?theme=<?php echo $theme; ?>" class="navigacia_ahref <?php echo ($currentPage == 'admin_spravy.php') ? 'active' : ''; ?>">Administrácia správ</a>
+                        <a href="admin_galeria.php?theme=<?php echo $theme; ?>" class="navigacia_ahref <?php echo ($currentPage == 'admin_galeria.php') ? 'active' : ''; ?>">Administrácia galérie</a>
                         <a href="db/logout.php" class="navigacia_ahref">Odhlásiť sa</a>
                     <?php else: ?>
-                        <a href="login.php" class="navigacia_ahref <?php echo ($currentPage == 'login.php') ? 'active' : ''; ?>">Prihlásenie administrátora</a>
+                        <a href="login.php?theme=<?php echo $theme; ?>" class="navigacia_ahref <?php echo ($currentPage == 'login.php') ? 'active' : ''; ?>">Prihlásenie administrátora</a>
                     <?php endif; ?>
+                    <a href="?theme=<?php echo $theme === 'dark' ? 'light' : 'dark'; ?>" class="navigacia_ahref">Zmena témy</a>
                 </nav>
             </div>
         </header>
